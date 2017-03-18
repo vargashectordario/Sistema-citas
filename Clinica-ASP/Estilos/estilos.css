@@ -1,0 +1,203 @@
+﻿body { 
+  background: url('../../Img/fondo-gris.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+}
+
+.panel-default {
+opacity: 0.7;
+margin-top:30px;
+}
+
+.form-group.last { margin-bottom:0px; 
+}                   
+
+.navbar {
+	margin-bottom: 0;
+}
+
+#Mapa
+{
+float:right;
+text-align: center;
+margin-top: 20px;
+}
+
+#LabelFechadenacimiento
+{
+   color: Gray;
+}
+
+.style3
+    {
+        color: rgb(0, 0, 153);
+    }
+    .style4
+    {
+        font-size: medium;
+    }
+    .style6
+    {
+        font-size: small;
+    }
+    .style7
+    {
+        color: #FF0000;
+    }
+    .style8
+    {
+        color: #000000;
+    }
+    .style11
+    {
+        text-align: center;
+        color: #000000;
+    }
+    .style12
+    {
+        font-size: small;
+        font-family: Geneva, Tahoma, "Nimbus Sans L", sans-serif;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: 16.2px;
+        text-align: justify;
+        text-indent: 0px;
+        text-transform: none;
+        white-space: normal;
+        word-spacing: 0px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+            
+        #contactoimg
+        {
+            float:right;
+            margin-top: 30px;
+            height: 260px;
+            width:inherit;
+        }
+
+.contentC
+{
+    width:500px;width:500px;
+    float:left;
+ }
+    
+#campos{
+
+
+	width: 300px;
+}
+
+.form-group
+{
+    padding:10px;  
+}
+
+.form-horizontal
+   {
+    padding:10px;  
+}
+.FAgregar
+{
+    margin-top:50px;
+    margin-left:100px;
+    }
+
+.FEditar
+{  
+    margin-top:-33px;
+    margin-left:200px;
+    }
+
+.FEliminar
+{
+    margin-top:-34px;
+    margin-left:285px;
+     }
+     
+.Botones
+{
+    margin-left: 130px;
+    
+    }
+
+#GridView1
+{    text-align: center;
+     margin-top : -100px;
+     margin-left: 90px;
+}
+
+.FormView1
+{
+    position:relative;
+    margin-left:700px;
+    margin-top:-230px;
+    width:344px;
+    border-collapse:inherit;
+    top: 0px;
+    left: 0px;
+}
+    
+.imgResgistro
+{   
+    margin-top: 30px;
+    width:612px;
+    }    
+    
+  .Griew
+  {
+      margin-left:50px;
+      margin-top:-30px;
+      
+      }
+      
+   .ImgPrincipal
+   {
+        margin-left:65px;
+    height: 263px;
+    width: 924px;
+}
+       
+  .Formulario
+  {
+        margin-top: -100px; 
+        width:600px; 
+        margin-left:20px; 
+      }
+       
+ .btn-success
+ {margin-left:45px;
+  
+ }
+ 
+   .Griew
+  {
+      margin-left:50px;
+      margin-top:45px;
+      
+      }
+      
+#FormCitas
+{
+    width:500px;
+}
+
+#GridView1
+{    margin-top : -100px;
+     margin-left: 80px;
+}
+
+#GridViewF
+{
+    margin-left : 350px;
+    
+    }
+
+
+    

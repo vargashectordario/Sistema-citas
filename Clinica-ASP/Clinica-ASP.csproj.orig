@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6814B900-E711-46AE-A48D-40C53E4B73E3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Clinica_ASP</RootNamespace>
+    <AssemblyName>Clinica-ASP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdministacionUsuarios.aspx" />
+    <Content Include="AdministracionCitas.aspx" />
+    <Content Include="AdministracionFormulaMedica.aspx" />
+    <Content Include="ClinicaBD.edmx.sql" />
+    <Content Include="Contactenos.aspx" />
+    <Content Include="Estilos\bootstrap-theme.css" />
+    <Content Include="Estilos\bootstrap-theme.min.css" />
+    <Content Include="Estilos\bootstrap.css" />
+    <Content Include="Estilos\bootstrap.min.css" />
+    <Content Include="Estilos\estilos.css" />
+    <Content Include="Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Img\Clinica.jpg" />
+    <Content Include="Img\contacto.jpg" />
+    <Content Include="Img\fondo-gris.png" />
+    <Content Include="InformeCitasPacienteMedico.aspx" />
+    <Content Include="InformeFormulaMedicaCita.aspx" />
+    <Content Include="PaginadeInicio.aspx" />
+    <Content Include="Registro.aspx" />
+<<<<<<< HEAD
+    <Content Include="ReportesHistoriaClinica.aspx" />
+=======
+    <Content Include="ReporteHistoriaClinica.aspx" />
+>>>>>>> 936eca9508e0d75ccc7b26049758a58bf481d166
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.11.3.min.js" />
+    <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdministacionUsuarios.aspx.cs">
+      <DependentUpon>AdministacionUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministacionUsuarios.aspx.designer.cs">
+      <DependentUpon>AdministacionUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionCitas.aspx.cs">
+      <DependentUpon>AdministracionCitas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionCitas.aspx.designer.cs">
+      <DependentUpon>AdministracionCitas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdministracionFormulaMedica.aspx.cs">
+      <DependentUpon>AdministracionFormulaMedica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdministracionFormulaMedica.aspx.designer.cs">
+      <DependentUpon>AdministracionFormulaMedica.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CitaHistoria.cs" />
+    <Compile Include="CitaPaciente.cs" />
+    <Compile Include="ClinicaBD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClinicaBD.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactenos.aspx.cs">
+      <DependentUpon>Contactenos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactenos.aspx.designer.cs">
+      <DependentUpon>Contactenos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformeCitasPacienteMedico.aspx.cs">
+      <DependentUpon>InformeCitasPacienteMedico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformeCitasPacienteMedico.aspx.designer.cs">
+      <DependentUpon>InformeCitasPacienteMedico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InformeFormulaMedicaCita.aspx.cs">
+      <DependentUpon>InformeFormulaMedicaCita.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InformeFormulaMedicaCita.aspx.designer.cs">
+      <DependentUpon>InformeFormulaMedicaCita.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaginadeInicio.aspx.cs">
+      <DependentUpon>PaginadeInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaginadeInicio.aspx.designer.cs">
+      <DependentUpon>PaginadeInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PgMaster.Master.cs">
+      <DependentUpon>PgMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PgMaster.Master.designer.cs">
+      <DependentUpon>PgMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PortalWebDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PortalWebDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Include="ReportesHistoriaClinica.aspx.cs">
+      <DependentUpon>ReportesHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportesHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>ReportesHistoriaClinica.aspx</DependentUpon>
+=======
+    <Compile Include="ReporteHistoriaClinica.aspx.cs">
+      <DependentUpon>ReporteHistoriaClinica.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteHistoriaClinica.aspx.designer.cs">
+      <DependentUpon>ReporteHistoriaClinica.aspx</DependentUpon>
+>>>>>>> 936eca9508e0d75ccc7b26049758a58bf481d166
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="ClinicaBD.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ClinicaBD.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PgMaster.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Estilos\bootstrap-theme.css.map" />
+    <None Include="Estilos\bootstrap.css.map" />
+    <None Include="Fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="Fonts\glyphicons-halflings-regular.woff" />
+    <None Include="Fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="PortalWebDataSet.xsc">
+      <DependentUpon>PortalWebDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PortalWebDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PortalWebDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PortalWebDataSet.xss">
+      <DependentUpon>PortalWebDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+<<<<<<< HEAD
+    <EmbeddedResource Include="Report1.rdlc" />
+=======
+    <EmbeddedResource Include="ReporteHistoriaUsuario.rdlc" />
+>>>>>>> 936eca9508e0d75ccc7b26049758a58bf481d166
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20347</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
